@@ -1,0 +1,566 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title> ESHOPEE </title>-->
+
+<!--&lt;!&ndash;  bootstrap&ndash;&gt;-->
+<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+<!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>-->
+
+<!--&lt;!&ndash;    google_fonts&ndash;&gt;-->
+<!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
+<!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+<!--    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">-->
+<!--    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Changa:wght@700&display=swap" rel="stylesheet">-->
+
+<!--&lt;!&ndash;home.css&ndash;&gt;-->
+<!--    <link rel="stylesheet" href="static/home.css">-->
+
+<!--&lt;!&ndash; Font Awesome &ndash;&gt;-->
+<!--  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>-->
+
+<!--</head>-->
+<!--<body>-->
+<!--<nav class="navbar navbar-expand-lg ">-->
+<!--  <div class="container-fluid ">-->
+<!--    <a class="navbar-brand" href="#">E-SHOPEE </a>-->
+<!--    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--      <span class="navbar-toggler-icon"></span>-->
+<!--    </button>-->
+
+<!--    <div class="collapse navbar-collapse " id="navbarScroll">-->
+
+<!--      <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll ms-auto" style="&#45;&#45;bs-scroll-height: 200px;">-->
+<!--          <li class="nav-item dropdown">-->
+<!--          <a class="nav-link dropdown-toggle " href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">-->
+<!--            👦‍‍My Account-->
+<!--          </a>-->
+<!--          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">-->
+<!--            <li><a class="dropdown-item" href="#">Change Number</a></li>-->
+<!--            <li><a class="dropdown-item" href="#">Change Email</a></li>-->
+<!--            <li><a class="dropdown-item" href="#">Change Password</a></li>-->
+<!--              <li><hr class="dropdown-divider"></li>-->
+<!--              <li><a class="dropdown-item" href="#">🏡Manage Adresses</a></li>-->
+<!--          </ul>-->
+<!--        </li>-->
+<!--          <li class="nav-item ">-->
+<!--          <a class="nav-link" href="mobiles.html">🎁My Orders</a>-->
+<!--        </li>-->
+<!--          <li class="nav-item">-->
+<!--          <a class="nav-link" href="#">😎About Developer</a>-->
+<!--        </li>-->
+<!--          <li class="nav-item">-->
+<!--          <a class="nav-link" href="#">💻Sign Out</a>-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--    </div>-->
+<!--    </div>-->
+<!--</nav>-->
+<!--    <form class="search-bar container-fluid d-flex me-auto">-->
+<!--        <input class="form-control" type="search" placeholder="Search Product"  aria-label="Search">-->
+<!--        <button class="btn btn-danger" type="submit">Search</button>-->
+<!--    </form>-->
+
+{%extends "base.html" %}
+{%block content%}
+
+
+<!--strip-->
+
+<div class=" container-fluid">
+  <div class="strip row ">
+    <div class=" col col-md-2 col-3"><a href="/mobiles"><img class="circle_img" src="https://m.media-amazon.com/images/G/31/img20/Events/Jup21dealsgrid/All_Icons_Template_1_icons_01.jpg" alt="" width="80" height="80"><h5 >Mobiles</h5></a></div>
+    <div class=" col  col-md-2 col-3"><a href="/mobiles"><img class="circle_img" src="https://m.media-amazon.com/images/G/31/img20/Events/Jup21dealsgrid/electronics.jpg" alt="" width="80" height="80"><h5 >Electronics</h5></a></div>
+    <div class=" col  col-md-2 col-3"><a href="/mobiles"><img class="circle_img" src="https://m.media-amazon.com/images/G/31/img20/Events/Jup21dealsgrid/computer_accessories.jpg" alt="" width="80" height="80"><h5 >Mobiles & computer accessories</h5></a></div>
+    <div class=" col  col-md-2 col-3"><a href="/mobiles"><img class="circle_img"  src="https://m.media-amazon.com/images/G/31/img20/Events/Jup21dealsgrid/Icons_Beauty1.png" alt="" width="80" height="80"><h5 >Beauty & Makeup</h5></a></div>
+    <div class=" col  col-md-2 col-3"><a href="/mobiles"><img class="circle_img"  src="https://m.media-amazon.com/images/G/31/img20/Events/Jup21dealsgrid/Home__kitchen.jpg" alt="" width="80" height="80"><h5 >Home And Kitchen</h5></a></div>
+    <div class=" col  col-md-2 col-3"><a href="/mobiles"><img class="circle_img"  src="https://m.media-amazon.com/images/G/31/img20/Events/Jup21dealsgrid/All_ASIN-Icons_150x150_Books.jpg" alt="" width="80" height="80"><h5 >Books And Stationary </h5></a></div>
+
+  </div>
+</div>
+
+<!--courosel-->
+<div class="container-fluid">
+
+<div id="carouselExampleFade" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Cameras/Jupiter/D28069901_IN_CEPC_Electronics_teaser-graphics_Jupiter-P1_Aug21_1500_5.jpg" class="carousel-img d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Wireless/WLA/Jupiter/MobPage/P53006629_Jup21_Phase1_WLA_Mobiles-page_Horizontal_Blue_PC.jpg" class="carousel-img d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Wireless/WLA/Jupiter/MobPage/P53006629_Jup21_Phase1_WLA_Mobiles-page_Horizontal_PC_green.jpg" class="carousel-img d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+<!--cards-->
+<div class="section container-fluid">
+
+<div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://i.pinimg.com/originals/80/a3/1a/80a31ad9ad65de19df08690177a2abb8.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title"> Apollo 15-17 EMU</h4>
+        <p class="card-text"><ul><li>Manufacturer: ILC Dover</li>
+        <li>Operating Pressure: 3.7 psi (25.5 kPa)</li>
+        <li class="price">Price: 60,999 Rs.</li>
+        <li class="offer">Best Offer: 57,999 Rs.</li></ul>
+        </p>
+      </div>
+      <div class="card-footer">
+         <button type="button" class="btn btn-outline-success m-2">Add To Cart</button>
+         <button type="button" class="btn btn-outline-danger m-2">Buy Now</button>
+      </div>
+    </div>
+    </div>
+      <div class="col">
+    <div class="card h-100">
+      <img src="https://nineplanets.org/wp-content/uploads/2020/06/No-Man%E2%80%99s-Sky.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">No Man's Sky</h4>
+        <p class="card-text"><ul><li>Top Selling Game</li>
+        <li>Experience infinite freedom</li>
+        <li class="price">Price: 4,999 Rs.</li>
+        <li class="offer">Best Offer: 3,999 Rs.</li></ul>
+        </p>
+      </div>
+      <div class="card-footer">
+         <button type="button" class="btn btn-outline-success m-2">Add To Cart</button>
+         <button type="button" class="btn btn-outline-danger m-2">Buy Now</button>
+      </div>
+    </div>
+    </div>
+    <div class="col">
+    <div class="card h-100">
+      <img src="https://m.media-amazon.com/images/I/81w9p5e3GJS._AC_SL1500_.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title"> Space Shuttle</h4>
+        <p class="card-text"><ul><li>For Kids</li>
+        <li>Best Educational Toy</li>
+        <li class="price">Price: 2,999 Rs.</li>
+        <li class="offer">Best Offer: 999 Rs.</li></ul>
+        </p>
+      </div>
+      <div class="card-footer">
+         <button type="button" class="btn btn-outline-success m-2">Add To Cart</button>
+         <button type="button" class="btn btn-outline-danger m-2">Buy Now</button>
+      </div>
+    </div>
+    </div>
+    <div class="col">
+    <div class="card h-100">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/51avt2zrmIL._SX322_BO1,204,203,200_.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title"> The Case for Space</h4>
+        <p class="card-text"><ul><li>Author: Robert Zubrin</li>
+        <li>Category: Nonfiction</li>
+        <li class="price">Price: 999 Rs.</li>
+        <li class="offer">Best Offer: 579 Rs.</li></ul>
+        </p>
+      </div>
+      <div class="card-footer">
+         <button type="button" class="btn btn-outline-success m-2">Add To Cart</button>
+         <button type="button" class="btn btn-outline-danger m-2">Buy Now</button>
+      </div>
+    </div>
+    </div>
+     <div class="col">
+    <div class="card h-100">
+      <img src="https://i.pinimg.com/originals/80/a3/1a/80a31ad9ad65de19df08690177a2abb8.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title"> Apollo 15-17 EMU</h4>
+        <p class="card-text"><ul><li>Manufacturer: ILC Dover</li>
+        <li>Operating Pressure: 3.7 psi (25.5 kPa)</li>
+        <li class="price">Price: 60,999 Rs.</li>
+        <li class="offer">Best Offer: 57,999 Rs.</li></ul>
+        </p>
+      </div>
+      <div class="card-footer">
+         <button type="button" class="btn btn-outline-success m-2">Add To Cart</button>
+         <button type="button" class="btn btn-outline-danger m-2">Buy Now</button>
+      </div>
+    </div>
+    </div>
+      <div class="col">
+    <div class="card h-100">
+      <img src="https://nineplanets.org/wp-content/uploads/2020/06/No-Man%E2%80%99s-Sky.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">No Man's Sky</h4>
+        <p class="card-text"><ul><li>Top Selling Game</li>
+        <li>Experience infinite freedom</li>
+        <li class="price">Price: 4,999 Rs.</li>
+        <li class="offer">Best Offer: 3,999 Rs.</li></ul>
+        </p>
+      </div>
+      <div class="card-footer">
+         <button type="button" class="btn btn-outline-success m-2">Add To Cart</button>
+         <button type="button" class="btn btn-outline-danger m-2">Buy Now</button>
+      </div>
+    </div>
+    </div>
+    <div class="col">
+    <div class="card h-100">
+      <img src="https://m.media-amazon.com/images/I/81w9p5e3GJS._AC_SL1500_.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title"> Space Shuttle</h4>
+        <p class="card-text"><ul><li>For Kids</li>
+        <li>Best Educational Toy</li>
+        <li class="price">Price: 2,999 Rs.</li>
+        <li class="offer">Best Offer: 999 Rs.</li></ul>
+        </p>
+      </div>
+      <div class="card-footer">
+         <button type="button" class="btn btn-outline-success m-2">Add To Cart</button>
+         <button type="button" class="btn btn-outline-danger m-2">Buy Now</button>
+      </div>
+    </div>
+    </div>
+    <div class="col">
+    <div class="card h-100">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/51avt2zrmIL._SX322_BO1,204,203,200_.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title"> The Case for Space</h4>
+        <p class="card-text"><ul><li>Author: Robert Zubrin</li>
+        <li>Category: Nonfiction</li>
+        <li class="price">Price: 999 Rs.</li>
+        <li class="offer">Best Offer: 579 Rs.</li></ul>
+        </p>
+      </div>
+      <div class="card-footer">
+         <button type="button" class="btn btn-outline-success m-2">Add To Cart</button>
+         <button type="button" class="btn btn-outline-danger m-2">Buy Now</button>
+      </div>
+    </div>
+    </div>
+     <div class="col">
+    <div class="card h-100">
+      <img src="https://i.pinimg.com/originals/80/a3/1a/80a31ad9ad65de19df08690177a2abb8.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title"> Apollo 15-17 EMU</h4>
+        <p class="card-text"><ul><li>Manufacturer: ILC Dover</li>
+        <li>Operating Pressure: 3.7 psi (25.5 kPa)</li>
+        <li class="price">Price: 60,999 Rs.</li>
+        <li class="offer">Best Offer: 57,999 Rs.</li></ul>
+        </p>
+      </div>
+      <div class="card-footer">
+         <button type="button" class="btn btn-outline-success m-2">Add To Cart</button>
+         <button type="button" class="btn btn-outline-danger m-2">Buy Now</button>
+      </div>
+    </div>
+    </div>
+      <div class="col">
+    <div class="card h-100">
+      <img src="https://nineplanets.org/wp-content/uploads/2020/06/No-Man%E2%80%99s-Sky.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">No Man's Sky</h4>
+        <p class="card-text"><ul><li>Top Selling Game</li>
+        <li>Experience infinite freedom</li>
+        <li class="price">Price: 4,999 Rs.</li>
+        <li class="offer">Best Offer: 3,999 Rs.</li></ul>
+        </p>
+      </div>
+      <div class="card-footer">
+         <button type="button" class="btn btn-outline-success m-2">Add To Cart</button>
+         <button type="button" class="btn btn-outline-danger m-2">Buy Now</button>
+      </div>
+    </div>
+    </div>
+    <div class="col">
+    <div class="card h-100">
+      <img src="https://m.media-amazon.com/images/I/81w9p5e3GJS._AC_SL1500_.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title"> Space Shuttle</h4>
+        <p class="card-text"><ul><li>For Kids</li>
+        <li>Best Educational Toy</li>
+        <li class="price">Price: 2,999 Rs.</li>
+        <li class="offer">Best Offer: 999 Rs.</li></ul>
+        </p>
+      </div>
+      <div class="card-footer">
+         <button type="button" class="btn btn-outline-success m-2">Add To Cart</button>
+         <button type="button" class="btn btn-outline-danger m-2">Buy Now</button>
+      </div>
+    </div>
+    </div>
+    <div class="col">
+    <div class="card h-100">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/51avt2zrmIL._SX322_BO1,204,203,200_.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title"> The Case for Space</h4>
+        <p class="card-text"><ul><li>Author: Robert Zubrin</li>
+        <li>Category: Nonfiction</li>
+        <li class="price">Price: 999 Rs.</li>
+        <li class="offer">Best Offer: 579 Rs.</li></ul>
+        </p>
+      </div>
+      <div class="card-footer">
+         <button type="button" class="btn btn-outline-success m-2">Add To Cart</button>
+         <button type="button" class="btn btn-outline-danger m-2">Buy Now</button>
+      </div>
+    </div>
+    </div>
+     <div class="col">
+    <div class="card h-100">
+      <img src="https://i.pinimg.com/originals/80/a3/1a/80a31ad9ad65de19df08690177a2abb8.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title"> Apollo 15-17 EMU</h4>
+        <p class="card-text"><ul><li>Manufacturer: ILC Dover</li>
+        <li>Operating Pressure: 3.7 psi (25.5 kPa)</li>
+        <li class="price">Price: 60,999 Rs.</li>
+        <li class="offer">Best Offer: 57,999 Rs.</li></ul>
+        </p>
+      </div>
+      <div class="card-footer">
+         <button type="button" class="btn btn-outline-success m-2">Add To Cart</button>
+         <button type="button" class="btn btn-outline-danger m-2">Buy Now</button>
+      </div>
+    </div>
+    </div>
+      <div class="col">
+    <div class="card h-100">
+      <img src="https://nineplanets.org/wp-content/uploads/2020/06/No-Man%E2%80%99s-Sky.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">No Man's Sky</h4>
+        <p class="card-text"><ul><li>Top Selling Game</li>
+        <li>Experience infinite freedom</li>
+        <li class="price">Price: 4,999 Rs.</li>
+        <li class="offer">Best Offer: 3,999 Rs.</li></ul>
+        </p>
+      </div>
+      <div class="card-footer">
+         <button type="button" class="btn btn-outline-success m-2">Add To Cart</button>
+         <button type="button" class="btn btn-outline-danger m-2">Buy Now</button>
+      </div>
+    </div>
+    </div>
+    <div class="col">
+    <div class="card h-100">
+      <img src="https://m.media-amazon.com/images/I/81w9p5e3GJS._AC_SL1500_.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title"> Space Shuttle</h4>
+        <p class="card-text"><ul><li>For Kids</li>
+        <li>Best Educational Toy</li>
+        <li class="price">Price: 2,999 Rs.</li>
+        <li class="offer">Best Offer: 999 Rs.</li></ul>
+        </p>
+      </div>
+      <div class="card-footer">
+         <button type="button" class="btn btn-outline-success m-2">Add To Cart</button>
+         <button type="button" class="btn btn-outline-danger m-2">Buy Now</button>
+      </div>
+    </div>
+    </div>
+    <div class="col">
+    <div class="card h-100">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/51avt2zrmIL._SX322_BO1,204,203,200_.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title"> The Case for Space</h4>
+        <p class="card-text"><ul><li>Author: Robert Zubrin</li>
+        <li>Category: Nonfiction</li>
+        <li class="price">Price: 999 Rs.</li>
+        <li class="offer">Best Offer: 579 Rs.</li></ul>
+        </p>
+      </div>
+      <div class="card-footer">
+         <button type="button" class="btn btn-outline-success m-2">Add To Cart</button>
+         <button type="button" class="btn btn-outline-danger m-2">Buy Now</button>
+      </div>
+    </div>
+    </div>
+     <div class="col">
+    <div class="card h-100">
+      <img src="https://i.pinimg.com/originals/80/a3/1a/80a31ad9ad65de19df08690177a2abb8.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title"> Apollo 15-17 EMU</h4>
+        <p class="card-text"><ul><li>Manufacturer: ILC Dover</li>
+        <li>Operating Pressure: 3.7 psi (25.5 kPa)</li>
+        <li class="price">Price: 60,999 Rs.</li>
+        <li class="offer">Best Offer: 57,999 Rs.</li></ul>
+        </p>
+      </div>
+      <div class="card-footer">
+         <button type="button" class="btn btn-outline-success m-2">Add To Cart</button>
+         <button type="button" class="btn btn-outline-danger m-2">Buy Now</button>
+      </div>
+    </div>
+    </div>
+      <div class="col">
+    <div class="card h-100">
+      <img src="https://nineplanets.org/wp-content/uploads/2020/06/No-Man%E2%80%99s-Sky.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">No Man's Sky</h4>
+        <p class="card-text"><ul><li>Top Selling Game</li>
+        <li>Experience infinite freedom</li>
+        <li class="price">Price: 4,999 Rs.</li>
+        <li class="offer">Best Offer: 3,999 Rs.</li></ul>
+        </p>
+      </div>
+      <div class="card-footer">
+         <button type="button" class="btn btn-outline-success m-2">Add To Cart</button>
+         <button type="button" class="btn btn-outline-danger m-2">Buy Now</button>
+      </div>
+    </div>
+    </div>
+    <div class="col">
+    <div class="card h-100">
+      <img src="https://m.media-amazon.com/images/I/81w9p5e3GJS._AC_SL1500_.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title"> Space Shuttle</h4>
+        <p class="card-text"><ul><li>For Kids</li>
+        <li>Best Educational Toy</li>
+        <li class="price">Price: 2,999 Rs.</li>
+        <li class="offer">Best Offer: 999 Rs.</li></ul>
+        </p>
+      </div>
+      <div class="card-footer">
+         <button type="button" class="btn btn-outline-success m-2">Add To Cart</button>
+         <button type="button" class="btn btn-outline-danger m-2">Buy Now</button>
+      </div>
+    </div>
+    </div>
+    <div class="col">
+    <div class="card h-100">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/51avt2zrmIL._SX322_BO1,204,203,200_.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title"> The Case for Space</h4>
+        <p class="card-text"><ul><li>Author: Robert Zubrin</li>
+        <li>Category: Nonfiction</li>
+        <li class="price">Price: 999 Rs.</li>
+        <li class="offer">Best Offer: 579 Rs.</li></ul>
+        </p>
+      </div>
+      <div class="card-footer">
+         <button type="button" class="btn btn-outline-success m-2">Add To Cart</button>
+         <button type="button" class="btn btn-outline-danger m-2">Buy Now</button>
+      </div>
+    </div>
+    </div>
+     <div class="col">
+    <div class="card h-100">
+      <img src="https://i.pinimg.com/originals/80/a3/1a/80a31ad9ad65de19df08690177a2abb8.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title"> Apollo 15-17 EMU</h4>
+        <p class="card-text"><ul><li>Manufacturer: ILC Dover</li>
+        <li>Operating Pressure: 3.7 psi (25.5 kPa)</li>
+        <li class="price">Price: 60,999 Rs.</li>
+        <li class="offer">Best Offer: 57,999 Rs.</li></ul>
+        </p>
+      </div>
+      <div class="card-footer">
+         <button type="button" class="btn btn-outline-success m-2">Add To Cart</button>
+         <button type="button" class="btn btn-outline-danger m-2">Buy Now</button>
+      </div>
+    </div>
+    </div>
+      <div class="col">
+    <div class="card h-100">
+      <img src="https://nineplanets.org/wp-content/uploads/2020/06/No-Man%E2%80%99s-Sky.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">No Man's Sky</h4>
+        <p class="card-text"><ul><li>Top Selling Game</li>
+        <li>Experience infinite freedom</li>
+        <li class="price">Price: 4,999 Rs.</li>
+        <li class="offer">Best Offer: 3,999 Rs.</li></ul>
+        </p>
+      </div>
+      <div class="card-footer">
+         <button type="button" class="btn btn-outline-success m-2">Add To Cart</button>
+         <button type="button" class="btn btn-outline-danger m-2">Buy Now</button>
+      </div>
+    </div>
+    </div>
+    <div class="col">
+    <div class="card h-100">
+      <img src="https://m.media-amazon.com/images/I/81w9p5e3GJS._AC_SL1500_.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title"> Space Shuttle</h4>
+        <p class="card-text"><ul><li>For Kids</li>
+        <li>Best Educational Toy</li>
+        <li class="price">Price: 2,999 Rs.</li>
+        <li class="offer">Best Offer: 999 Rs.</li></ul>
+        </p>
+      </div>
+      <div class="card-footer">
+         <button type="button" class="btn btn-outline-success m-2">Add To Cart</button>
+         <button type="button" class="btn btn-outline-danger m-2">Buy Now</button>
+      </div>
+    </div>
+    </div>
+    <div class="col">
+    <div class="card h-100">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/51avt2zrmIL._SX322_BO1,204,203,200_.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title"> The Case for Space</h4>
+        <p class="card-text"><ul><li>Author: Robert Zubrin</li>
+        <li>Category: Nonfiction</li>
+        <li class="price">Price: 999 Rs.</li>
+        <li class="offer">Best Offer: 579 Rs.</li></ul>
+        </p>
+      </div>
+      <div class="card-footer">
+         <button type="button" class="btn btn-outline-success m-2">Add To Cart</button>
+         <button type="button" class="btn btn-outline-danger m-2">Buy Now</button>
+      </div>
+    </div>
+    </div>
+</div>
+</div>
+
+{% endblock %}
+
+<!--&lt;!&ndash;pagination&ndash;&gt;-->
+<!--<div class="section container-fluid">-->
+
+<!--<nav aria-label="Page navigation example">-->
+<!--  <ul class="pagination justify-content-center">-->
+<!--    <li class="page-item">-->
+<!--      <a class="page-link" href="#" aria-label="Previous">-->
+<!--        <span aria-hidden="true">&laquo;</span>-->
+<!--      </a>-->
+<!--    </li>-->
+<!--    <li class="page-item"><a class="page-link" href="#">1</a></li>-->
+<!--    <li class="page-item"><a class="page-link" href="#">2</a></li>-->
+<!--    <li class="page-item"><a class="page-link" href="#">3</a></li>-->
+<!--    <li class="page-item">-->
+<!--      <a class="page-link" href="#" aria-label="Next">-->
+<!--        <span aria-hidden="true">&raquo;</span>-->
+<!--      </a>-->
+<!--    </li>-->
+<!--  </ul>-->
+<!--</nav>-->
+<!--</div>-->
+
+<!--&lt;!&ndash;footer&ndash;&gt;-->
+<!--  <footer class="footer" id="footer">-->
+<!--    <section class="row">-->
+<!--    <div class="section container-fluid col">-->
+<!--      <h3>Explore Everything</h3>-->
+<!--      <button class="download-button btn btn-lg btn-dark ms-auto" type="button"><i class="fab fa-apple"></i> Download</button>-->
+<!--      <button class="download-button btn btn-lg btn-light ml-auto" type="button"><i class="fab fa-google-play"></i> Download</button>-->
+<!--    </div>-->
+<!--    <div class="section container-fluid col">-->
+<!--      <i class="social-icon fab fa-facebook-f"></i>-->
+<!--      <i class="social-icon fab fa-twitter"></i>-->
+<!--      <i class="social-icon fab fa-instagram"></i>-->
+<!--      <i class="social-icon fas fa-envelope"></i>-->
+<!--      <p>@ copyright 2021</p> <p> E-SHOPEE</p>-->
+<!--    </div>-->
+<!--      </section>-->
+<!--  </footer>-->
+<!--</body>-->
+<!--</html>-->

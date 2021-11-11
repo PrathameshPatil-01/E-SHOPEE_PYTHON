@@ -1,0 +1,72 @@
+body {
+   color: #F12B6B;
+  font-family: 'Cairo', sans-serif;
+  text-align: center;
+  background-color: #F7E8F6;
+  padding-top:60px;
+
+}
+
+.display {
+ height: 675px;
+
+}
+.box {
+    margin: 3% 0;
+    width:100%;
+
+}
+
+form {
+    text-align:left;
+    margin: 5% 15%;
+
+}
+h1 {
+    font-weight:bold;
+    padding: 5% 0 15% 0;
+    margin: 0;
+}
+
+h2 {
+  color: #1B1717;
+  font-size: 115%;
+
+
+}
+
+.logo {
+font-size: 500%;
+font-family: 'Changa', sans-serif;
+padding-top:7%;
+ margin: 0;
+
+}
+
+p {
+  padding:10px 0 20px 0;
+  color: #1B1717;
+  font-size: 105%;
+
+}
+.icon {
+height: 100px;
+width: 100px;
+}
+
+.err {
+position:absolute;
+color:red;
+font-size:65%;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+.title-image {
+   height:100%;
+   width: 100%;
+
+}
