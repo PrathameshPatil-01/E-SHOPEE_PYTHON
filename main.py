@@ -3,7 +3,6 @@ from flask_bootstrap import Bootstrap
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField,SelectField,PasswordField,validators
 from wtforms.validators import DataRequired, Email, Length
-import csv
 
 
 
@@ -21,10 +20,12 @@ class Signup(FlaskForm):
     email = StringField(label='Email', validators=[DataRequired()])
     password = PasswordField('Password', [
         validators. Length(min=8),
-        validators.DataRequired(),
-        validators.EqualTo('confirm', message='Passwords must match')
+        validators.DataRequired()
     ])
-    confirm = PasswordField('Confirm Password')
+    confirm = PasswordField('Confirm Password', [
+        validators.DataRequired(),
+        validators.EqualTo('password', message='Passwords must match')
+    ])
 
     submit = SubmitField(label="Sign Up")
 

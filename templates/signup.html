@@ -39,7 +39,7 @@
     {%endfor%}<br>
     {{form.confirm.label}}<br>
     {{form.confirm (class_="box" ,type="password", placeholder="confirm your password")}}<br>
-    {%for err in form.email.errors%}
+    {%for err in form.confirm.errors%}
     <span class="err">{{err}}</span>
     {%endfor%}<br>
     {{form.submit (class_="box btn btn-danger ", type="submit" )}}
