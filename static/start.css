@@ -3,12 +3,12 @@ body {
   font-family: 'Cairo', sans-serif;
   text-align: center;
   background-color: #F7E8F6;
-  padding-top:60px;
 
 }
 
 .display {
- height: 100%;
+  padding-top:60px;
+  height: 100%;
 
 }
 .box {
@@ -48,10 +48,6 @@ p {
   color: #1B1717;
   font-size: 105%;
 
-}
-.icon {
-height: 100px;
-width: 100px;
 }
 
 .err {
