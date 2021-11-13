@@ -58,13 +58,33 @@ def reset():
 
     return render_template("reset.html",form=form)
 
+@app.route("/home")
+def home():
+    return render_template("home.html")
+
 @app.route("/mobiles")
 def mobiles():
     return render_template("mobiles.html")
 
-@app.route("/home")
-def home():
-    return render_template("home.html")
+@app.route("/electronics")
+def electronics():
+    return render_template("electronics.html")
+
+@app.route("/space_store")
+def space_store():
+    return render_template("space_store.html")
+
+@app.route("/makeup")
+def makeup():
+    return render_template("makeup.html")
+
+@app.route("/kitchen")
+def kitchen():
+    return render_template("kitchen.html")
+
+@app.route("/computer")
+def computer():
+    return render_template("computer.html")
 
 
 
