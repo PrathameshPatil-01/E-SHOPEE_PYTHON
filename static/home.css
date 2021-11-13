@@ -4,6 +4,52 @@ body {
   background-color: #F7E8F6;
 
 }
+h2{
+  margin: 2% 0;
+}
+
+.box {
+  display: flex;
+  width: 100%;
+  height: 8px;
+  margin: 5px 0px 60px 0px;
+}
+
+.box-sm {
+  height: 8px;
+  margin: 0;
+  flex-grow: 1;
+  transition: all .8s ease-in-out;
+  cursor: pointer;
+}
+
+// Growing the width of box, when hover using flex-grow property
+.box-sm:hover {
+  flex-grow: 12;
+}
+.red {
+  background-color: #FF5852;
+}
+
+.orange {
+  background-color: #FF9000;
+}
+
+.yellow {
+  background-color: #FFD300;
+}
+
+.green {
+  background-color: #3DCD49;
+}
+
+.blue {
+  background-color: #0089D7;
+}
+
+.purple {
+  background-color: #9E44C4;
+}
 .navbar {
   padding: 3% 0;
   margin: 0 0 2% 0;
