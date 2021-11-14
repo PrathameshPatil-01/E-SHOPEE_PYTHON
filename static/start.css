@@ -72,3 +72,12 @@ a {
    width: 75%;
 
 }
+
+
+.btn{
+background-color: #FF467E;
+}
+
+.btn:hover{
+background-color: #F12B6B;
+}
