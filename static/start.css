@@ -7,8 +7,13 @@ body {
 }
 
 .display {
-  padding-top:60px;
-  height: 100%;
+    border-color: #FF467E;
+    background-color: #FFF0F5 ;
+    border-style: solid;
+    border-width: 3.5px;
+    border-radius: 5%;
+    margin-top:60px;
+    height: 100%;
 
 }
 .box {
@@ -24,7 +29,7 @@ form {
 }
 h1 {
     font-weight:bold;
-    padding: 5% 0 0 0;
+    padding: 10% 0 0 0;
     margin: 0;
 }
 
@@ -38,7 +43,7 @@ h2 {
 .logo {
 font-size: 5rem;
 font-family: 'Changa', sans-serif;
-padding-top:7%;
+padding-top:10%;
  margin: 0;
 
 }
@@ -62,7 +67,8 @@ a {
 }
 
 .title-image {
-   height:100%;
-   width: 100%;
+   margin-top:25%;
+   height:75%;
+   width: 75%;
 
 }
