@@ -139,3 +139,11 @@ font-size: 1.2rem;
 .download-button {
   margin: 3% 2% ;
 }
+
+.search{
+background-color: #FF467E;
+}
+
+.search:hover{
+background-color: #F12B6B;
+}
