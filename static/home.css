@@ -26,7 +26,12 @@ font-size: 300%;
 }
 .navbar-toggler{
 color:#F12B6B;
+border-style:solid;
 border-width:2px;
+border-color:#F12B6B;
+}
+.navbar-toggler-icon{
+color:#F12B6B;
 }
 
 .container-fluid{
