@@ -24,6 +24,10 @@ color: #F12B6B;
 font-weight:bold;
 font-size: 300%;
 }
+.navbar-toggler{
+color:#F12B6B;
+border-width:2px;
+}
 
 .container-fluid{
   padding: 0 10%;
