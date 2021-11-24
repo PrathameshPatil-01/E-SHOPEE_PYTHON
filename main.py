@@ -1,14 +1,31 @@
-from flask import Flask, render_template
+from flask import Flask, render_template,url_for,request
 from flask_bootstrap import Bootstrap
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField,SelectField,PasswordField,validators
 from wtforms.validators import DataRequired, Email, Length
+from flask_sqlalchemy import SQLAlchemy
 
 
 
 app=Flask(__name__)
 app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
 Bootstrap(app)
+
+##CREATING DB
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///cards.db'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+db = SQLAlchemy(app)
+
+##creating table
+class Cards(db.Model):
+    id=db.Column(db.Integer, primary_key=True)
+    title=db.Column(db.String(200), nullable=False)
+    img_url=db.Column(db.String, nullable=False)
+    specs=db.Column(db.String, nullable=False)
+    price=db.Column(db.Integer,nullable=False)
+    offer=db.Column(db.Integer,nullable=False)
+db.create_all()
+
 
 
 class Login(FlaskForm):
