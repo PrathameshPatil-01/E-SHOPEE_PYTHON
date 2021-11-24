@@ -50,6 +50,13 @@ class Reset(FlaskForm):
     email = StringField(label='Email', validators=[DataRequired()])
     submit = SubmitField(label="Send Verification Code")
 
+class Products(FlaskForm):
+    title=StringField(label='Title', validators=[DataRequired()])
+    img_url=StringField(label='Img_url', validators=[DataRequired()])
+    specs=StringField(label='Specifications', validators=[DataRequired()])
+    price=StringField(label='Price', validators=[DataRequired()])
+    offer=StringField(label='Best Offer', validators=[DataRequired()])
+    submit = SubmitField(label="Add Product")
 
 @app.route("/",methods=["GET", "POST"])
 def login():
@@ -104,7 +111,13 @@ def computer():
     return render_template("computer.html")
 
 
+@app.route("/add_card",methods=["GET", "POST"])
+def add_card():
+    form = Products()
+    if form.validate_on_submit():
+        return render_template("home.html")
 
+    return render_template("add_card.html",form=form)
 
 
 if __name__ == '__main__':
