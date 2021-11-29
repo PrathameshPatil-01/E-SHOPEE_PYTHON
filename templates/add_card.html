@@ -11,7 +11,10 @@ Add Product
 <h1  class="fw-bold">Add Your Product</h1>
 <h2 class="">Fill all fields about product </h2>
 
-<form>
+<form method="post">
+            {{ form.csrf_token }}
+    {{form.type.label}}<br>
+    {{form.type (class_='box', placeholder='eg.mobiles,space store,home and kitchen ')}}<br>
         {{ form.csrf_token }}
     {{form.title.label}}<br>
     {{form.title (class_='box', placeholder='enter title ')}}<br>
@@ -32,7 +35,6 @@ Add Product
     {{form.offer.label}}<br>
     {{form.offer (class_='box', placeholder='enter offer price')}}<br>
     {{form.submit (class_="box btn btn-danger ", type="submit" )}}
-
 
 </form>
 </div>
