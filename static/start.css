@@ -84,3 +84,7 @@ background-color: #FF467E;
 .btn:hover{
 background-color: #F12B6B;
 }
+
+::placeholder{
+font-size:80%;
+}
