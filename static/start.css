@@ -12,7 +12,7 @@ body {
     border-style: solid;
     border-width: 3.5px;
     border-radius: 5%;
-    margin-top:60px;
+    margin:3% 0 0 0;
     height: 100%;
 
 }
@@ -39,6 +39,10 @@ h2 {
   padding: 10% 0 3% 0;
 
 }
+h5 {
+  color: red;
+  font-size: 100%;
+}
 
 .logo {
 font-size: 5rem;
@@ -56,7 +60,6 @@ p {
 }
 
 .err {
-position:absolute;
 color: blue;
 font-size:65%;
 }

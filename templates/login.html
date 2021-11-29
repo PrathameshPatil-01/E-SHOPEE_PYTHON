@@ -12,10 +12,17 @@ Login
     </div>
 <div class="display col  col-lg-4 col-sm-12 ">
     <h1 class="logo fw-bold">E-SHOPEE </h1>
-    <h4></h4>
-    <h2 class="signin">Sign in with your email and password</h2>
+        <h2 class="signin">Sign in with your email and password</h2>
 
-<form method="post">
+        {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        {% for message in messages %}
+         <h5>{{ message }}</h5>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+
+<form action="{{ url_for('login') }}" method="post">
     {{ form.csrf_token }}
     {{form.email.label}}<br>
     {{form.email (class_='box', type='email', placeholder='enter your email')}}<br>
