@@ -85,8 +85,8 @@ class Products(FlaskForm):
 def login():
     login_form = Login()
     if request.method == "POST":
-        email = request.login_form.get('email')
-        password = request.login_form.get('password')
+        email = request.form.get('email')
+        password = request.form.get('password')
 
         # Find user by email entered.
         user = User.query.filter_by(email=email).first()
@@ -110,15 +110,15 @@ def signup():
     signup_form= Signup()
     if request.method == "POST":
 
-        if User.query.filter_by(email=request.signup_form.get('email')).first():
+        if User.query.filter_by(email=request.form.get('email')).first():
             #User already exists
             flash("You've already signed up with that email, log in instead!")
             return redirect(url_for('login'))
 
         new_user = User(
-            email=request.signup_form.get('email'),
-            username=request.signup_form.get('username'),
-            password=generate_password_hash(request.signup_form.get('password'),method='pbkdf2:sha256', salt_length=8)
+            email=request.form.get('email'),
+            username=request.form.get('username'),
+            password=generate_password_hash(request.form.get('password'),method='pbkdf2:sha256', salt_length=8)
         )
         if signup_form.validate_on_submit():
             db.session.add(new_user)
@@ -126,7 +126,7 @@ def signup():
 
             login_user(new_user)
 
-            return render_template("login.html")
+            return redirect(url_for('login'))
     return render_template("signup.html", form=signup_form)
 
 
