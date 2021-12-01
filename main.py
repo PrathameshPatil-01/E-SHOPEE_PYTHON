@@ -85,8 +85,8 @@ class Products(FlaskForm):
 def login():
     login_form = Login()
     if request.method == "POST":
-        email = request.form.get('email')
-        password = request.form.get('password')
+        email = request.login_form.get('email')
+        password = request.login_form.get('password')
 
         # Find user by email entered.
         user = User.query.filter_by(email=email).first()
