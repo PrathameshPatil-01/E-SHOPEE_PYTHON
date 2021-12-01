@@ -110,7 +110,7 @@ def signup():
     signup_form= Signup()
     if request.method == "POST":
 
-        if User.query.filter_by(email=request.form.get('email')).first():
+        if User.query.filter_by(email=request.signup_form.get('email')).first():
             #User already exists
             flash("You've already signed up with that email, log in instead!")
             return redirect(url_for('login'))
