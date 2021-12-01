@@ -134,7 +134,7 @@ def signup():
 def reset():
     form = Reset()
     if form.validate_on_submit():
-        return render_template("signup.html")
+        return redirect(url_for('login'))
 
     return render_template("reset.html",form=form)
 
