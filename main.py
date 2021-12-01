@@ -11,11 +11,11 @@ import os
 
 
 app=Flask(__name__)
-app.config['SECRET_KEY'] = os.environ.get("53t98ty935hg92358929gh")
+app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY","53t98ty935hg92358929gh")
 Bootstrap(app)
 
 ##CREATING DB
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("postgres://eltoscettmvxyw:9700fd81b2b43ae6fd3a66f059916a8c48514982fe0863c2c36814e26b87806f@ec2-3-221-24-14.compute-1.amazonaws.com:5432/dfsq1krvmg2236",'sqlite:///cards.db')
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DATABASE_URL",'sqlite:///cards.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
