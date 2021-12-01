@@ -45,7 +45,7 @@ class Cards(db.Model):
     specs=db.Column(db.String, nullable=False)
     price=db.Column(db.Integer,nullable=False)
     offer=db.Column(db.Integer,nullable=False)
-#db.create_all()
+db.create_all()
 
 
 
@@ -116,9 +116,9 @@ def signup():
             return redirect(url_for('login'))
 
         new_user = User(
-            email=request.form.get('email'),
-            username=request.form.get('username'),
-            password=generate_password_hash(request.form.get('password'),method='pbkdf2:sha256', salt_length=8)
+            email=request.signup_form.get('email'),
+            username=request.signup_form.get('username'),
+            password=generate_password_hash(request.signup_form.get('password'),method='pbkdf2:sha256', salt_length=8)
         )
         if signup_form.validate_on_submit():
             db.session.add(new_user)
@@ -166,37 +166,37 @@ def home():
 @login_required
 def mobiles():
     cards=Cards.query.filter_by(type="mobiles")
-    return render_template("mobiles.html", cards=cards)
+    return render_template("mobiles.html", cards=cards,username=current_user.username)
 
 @app.route("/electronics")
 @login_required
 def electronics():
     cards = Cards.query.filter_by(type="electronics")
-    return render_template("electronics.html", cards=cards)
+    return render_template("electronics.html", cards=cards,username=current_user.username)
 
 @app.route("/space_store")
 @login_required
 def space_store():
     cards = Cards.query.filter_by(type="space store")
-    return render_template("space_store.html", cards=cards)
+    return render_template("space_store.html", cards=cards,username=current_user.username)
 
 @app.route("/makeup")
 @login_required
 def makeup():
     cards = Cards.query.filter_by(type="beauty and makeup")
-    return render_template("makeup.html", cards=cards)
+    return render_template("makeup.html", cards=cards,username=current_user.username)
 
 @app.route("/kitchen")
 @login_required
 def kitchen():
     cards = Cards.query.filter_by(type="home and kitchen")
-    return render_template("kitchen.html", cards=cards)
+    return render_template("kitchen.html", cards=cards,username=current_user.username)
 
 @app.route("/computer")
 @login_required
 def computer():
     cards = Cards.query.filter_by(type="computer")
-    return render_template("computer.html", cards=cards)
+    return render_template("computer.html", cards=cards,username=current_user.username)
 
 @app.route('/logout')
 @login_required
