@@ -126,7 +126,7 @@ def signup():
 
             login_user(new_user)
 
-            return render_template("home.html")
+            return render_template("login.html")
     return render_template("signup.html", form=signup_form)
 
 
