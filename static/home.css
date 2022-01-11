@@ -123,7 +123,7 @@ a:hover  {
 }
 .card:hover {
   border-style: outset;
-  border-width: 5px;
+  border-width: 6px;
 }
 .card-img-top{
   padding-top: 8%;
