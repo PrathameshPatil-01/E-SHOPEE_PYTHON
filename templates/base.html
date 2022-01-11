@@ -32,12 +32,12 @@
     <div class="collapse navbar-collapse " id="navbarScroll">
 
       <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll ms-auto" style="--bs-scroll-height: 200px;">
-          <li class="nav-item dropdown">👦
+          <li class="nav-item dropdown"><P class="emoji">👦</P>
           <a class="nav-link dropdown-toggle " href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             ‍‍My Account
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-              <li><h2 class="dropdown-item">{{ username }}</h2></li>
+              <li><h4 class="dropdown-item">{{ username }}</h4></li>
               <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Change Number</a></li>
             <li><a class="dropdown-item" href="#">Change Email</a></li>
@@ -46,13 +46,13 @@
               <li><a class="dropdown-item" href="#">🎁My Orders</a></li>
           </ul>
         </li>
-          <li class="nav-item ">🧿
+          <li class="nav-item "><P class="emoji">🧿</P>
           <a class="nav-link" href="{{ url_for('add_card') }}">Sell Product</a>
         </li>
-          <li class="nav-item">😎
+          <li class="nav-item"><P class="emoji">😎</P>
           <a class="nav-link" href="#">About Developer</a>
         </li>
-          <li class="nav-item">💻
+          <li class="nav-item"><P class="emoji">💻</P>
           <a class="nav-link" href="{{ url_for('logout') }}">Log Out</a>
         </li>
       </ul>

@@ -73,7 +73,7 @@ class Reset(FlaskForm):
     submit = SubmitField(label="Send Verification Code")
 
 class Products(FlaskForm):
-    type = StringField(label='Classify Product', validators=[DataRequired()])
+    type = SelectField('Classify Product', choices=[('space_store', 'Space Store'), ('mobiles', 'Mobiles'), ('Electronics', 'Electronics'), ('Beauty_And_Makeup', 'Beauty & Makeup'),('Home_and_Kitchen','Home & Kitchen'),('Computer_Accessories', 'Computer Accessories ')])
     title=StringField(label='Title', validators=[DataRequired()])
     img_url=StringField(label='Img_url', validators=[DataRequired()])
     specs=StringField(label='Specifications', validators=[DataRequired()])
@@ -177,25 +177,25 @@ def electronics():
 @app.route("/space_store")
 @login_required
 def space_store():
-    cards = Cards.query.filter_by(type="space store")
+    cards = Cards.query.filter_by(type="space_store")
     return render_template("space_store.html", cards=cards,username=current_user.username)
 
 @app.route("/makeup")
 @login_required
 def makeup():
-    cards = Cards.query.filter_by(type="beauty and makeup")
+    cards = Cards.query.filter_by(type="beauty_and_makeup")
     return render_template("makeup.html", cards=cards,username=current_user.username)
 
 @app.route("/kitchen")
 @login_required
 def kitchen():
-    cards = Cards.query.filter_by(type="home and kitchen")
+    cards = Cards.query.filter_by(type="home_and_kitchen")
     return render_template("kitchen.html", cards=cards,username=current_user.username)
 
 @app.route("/computer")
 @login_required
 def computer():
-    cards = Cards.query.filter_by(type="computer")
+    cards = Cards.query.filter_by(type="computer_accessories")
     return render_template("computer.html", cards=cards,username=current_user.username)
 
 @app.route('/logout')

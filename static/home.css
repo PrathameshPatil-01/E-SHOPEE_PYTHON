@@ -4,12 +4,8 @@ body {
   background-color: #F7E8F6;
 
 }
-h2{
-  margin: 2% 0;
-}
-
 .navbar {
-  padding: 3% 0;
+  padding: 3% 0 2% 0;
   margin: 0 0 2% 0;
 }
 .navbar-brand{
@@ -33,32 +29,40 @@ border-color:#F12B6B;
 .navbar-toggler-icon{
 color:#F12B6B;
 }
+.nav-link {
+    font-size: 120%;
+    color: #000000;
+}
+.nav-link:hover {
+    color: #FF467E;
+    font-weight: bold;
 
+}
+.emoji{
+font-size: 200%;
+margin: 0;
+}
 .container-fluid{
   padding: 0 10%;
 }
 .circle_img {
   border-color: #FF467E;
-  border-style: solid;
+  border-style: inset;
   border-radius: 100%;
 }
-ul{
+.circle_img:hover {
+  border-style: outset;
+}
+li{
 list-style-type: none ;
 
 }
 h2{
+margin: 2% 0;
 font-family: 'Changa', sans-serif;
 color: #000000;
 font-weight:bold;
-font-size: 200%;
-}
-h5 {
-padding-top: 10%;
- font-size: 100%;
-
-}
-h5:hover {
-  font-weight: bold;
+font-size: 250%;
 }
 a {
   color: #000000;
@@ -68,51 +72,52 @@ a:hover  {
   font-weight: bold;
   color: #FF467E;
 }
-.nav-link {
-    font-size: 120%;
-    color: #000000;
-
-}
-
-.nav-link:hover {
-    color: #FF467E;
-    font-weight: bold;
-
-}
 .strip {
   padding: 50px 0;
+}
+.classification {
+ padding-top: 10%;
+ font-size: 100%;
 
+}
+.classification:hover {
+  font-weight: bold;
 }
 .section {
   padding: 2% 6%;
 }
 .carousel-img {
   border-color: #FF467E;
-  border-style: solid;
+  border-style: double;
   border-width: 5px;
   height:400px ;
   width: 100%;
 }
 .card {
+  height: 800px;
+  width: 100%;
   border-color: #FF467E;
   background-color: #FFF0F5 ;
-  border-style: solid;
-  border-width: 3.5px;
- margin: 1% 3%;
+  border-style: double;
+  border-width: 4px;
+  margin: 1% 3%;
+
 }
 .card:hover {
+  border-style: inset;
+  border-width: 7px;
 }
 .card-img-top{
   padding-top: 8%;
   margin-left: auto;
   margin-right: auto;
-  height: 50%;
-  width: 60%;
+  height: 250px;
+  width: 150px;
 }
 .card-title{
 font-family: 'Changa', sans-serif;
 font-weight:bold;
-font-size: 2rem;
+font-size: 1.8rem;
 }
 .price {
 margin: 5% 0;
@@ -123,9 +128,9 @@ background-color: #FF467E;
 }
 .offer{
 font-weight:bold;
-font-size: 1.2rem;
+font-size: 1.4rem;
  background-color: #F6C7C7;
-
+ margin: 5% 0;
 }
 .page-link {
     color: #000000;
