@@ -9,14 +9,15 @@ body {
 .display {
     border-color: #FF467E;
     background-color: #FFF0F5 ;
-    border-style: solid;
-    border-width: 3.5px;
-    border-radius: 5%;
+    border-style: outset;
+    border-width: 10px;
+    border-radius: ;
     margin:3% 0 0 0;
     height: 100%;
 
 }
 .box {
+    border-color: #FF467E;
     margin: 3% 0;
     width:100%;
 
@@ -78,11 +79,15 @@ a {
 
 
 .btn{
-background-color: #FF467E;
+    border-color: #FF467E;
+    border-style: outset;
+    border-width: 3px;
+    background-color: #FF467E;
 }
 
 .btn:hover{
-background-color: #F12B6B;
+    border-color: #FF467E;
+    background-color: #F12B6B;
 }
 
 ::placeholder{
