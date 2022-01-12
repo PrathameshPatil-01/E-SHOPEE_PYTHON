@@ -19,6 +19,7 @@ body {
 .box {
     border-color: #FF467E;
     margin: 3% 0;
+    height: 30%;
     width:100%;
 
 }
@@ -83,6 +84,8 @@ a {
     border-style: outset;
     border-width: 3px;
     background-color: #FF467E;
+    height: 30%;
+    width:100%;
 }
 
 .btn:hover{
