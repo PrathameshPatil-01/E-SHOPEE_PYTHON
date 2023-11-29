@@ -9,7 +9,7 @@ E-SHOPEE is a dynamic e-commerce website powered by Flask, HTML, CSS, and Bootst
 ## Table of Contents
 
 - [Features](#features)
-- [Live Demo](#live-demo)
+- [Demo](#demo)
 - [Screenshots](#screenshots)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -22,7 +22,7 @@ E-SHOPEE is a dynamic e-commerce website powered by Flask, HTML, CSS, and Bootst
 - **Product Categorization:** Easy navigation through product categories.
 - **Responsive Design:** Seamless experience across all devices.
 
-## Live Demo
+## Demo
 
 Visit the live site: [E-SHOPEE](https://e-shopee-python-prathamesh.onrender.com/)
 
